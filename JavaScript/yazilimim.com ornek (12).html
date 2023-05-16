@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        function login()
+        {
+            var say = document.getElementById("sayac").value;
+            var kullanici = "admin";
+            var sifre = "12345";
+            var gkullanici = document.getElementById("kadi").value;
+            var gsifre = document.getElementById("pass").value;
+            if (say < 4)
+            {
+                if (gkullanici == kullanici && gsifre == sifre)
+                {
+                    document.getElementById("lblsonuc").innerHTML = "Giriş Başarılı";
+                }
+                else {
+                    document.getElementById("lblsonuc").innerHTML = "Tekrar Deneyin";
+                    say++;
+                    document.getElementById("sayac").value = say;
+                }
+            }
+            else
+            {
+                document.getElementById("x").disabled = true;
+                document.getElementById("kadi").disabled = true;
+                document.getElementById("pass").disabled = true;
+                document.getElementById("lblsonuc").innerHTML = "Deneme Hakkı Bitti";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="kadi" placeholder="Kullanıcı adı..." /><br />
+        <input type="password" id="pass" placeholder="Paralonız..." /><br />
+        <input type="button" value="giris" onclick="login()" id="x" /><br />
+        <label id="lblsonuc"></label>
+        <input type="text" value="1" id="sayac"/><br />
+    </form>
+</body>
+</html>

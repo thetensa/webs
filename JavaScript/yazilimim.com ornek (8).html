@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <script type="text/javascript">
+        var sayilar = new Array();
+        var i;
+        for (i=0;i<5;i++)
+        {
+            sayilar[i] =Number(prompt(i + 1 + ". Sayıyı giriniz"));
+        }
+        sayilar.sort();
+        sayilar.reverse();
+        for (i=0;i<5;i++)
+        {
+            document.write[i+1+".Sayı"+sayilar[i]+"<br>"]
+        }
+        document.write("En Küçük Sayı : " + sayilar[0] + "<br>")
+        document.write("En Büyük Sayı : " + sayilar[4] + "<br>")
+    </script>
+</body>
+</html>

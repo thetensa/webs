@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        function Topla()
+        {
+            var a = Number(document.getElementById("metin1").value);
+            var b = Number(document.getElementById("metin2").value);
+            var sonuc = a + b;
+            document.getElementById("sonuc").innerText = sonuc;
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Birinci Sayı : </td>
+            <td><input type="text" id="metin1"/></td>
+        </tr>
+        <tr>
+            <td>İkinci Sayı : </td>
+            <td><input type="text" id="metin2" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button id="btn" onclick="Topla()">Sayıları Topla</button></td>
+        </tr>
+        <tr>
+            <td>Toplam</td>
+            <td><label id="sonuc"></label></td>
+        </tr>
+    </table>
+</body>
+</html>

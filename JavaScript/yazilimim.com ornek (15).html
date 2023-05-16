@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        function kalp() {
+            var x = document.getElementById("tekrar").value;
+            while (x>0) {
+                document.write("♥");
+                x = x - 1;
+            }
+        }
+    </script>
+</head>
+<body>
+   <input type="text" id="tekrar"/>
+   <input type="button" value="Yaz" onclick="kalp()"/>
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        function stildegistir(stil)
+        {
+            document.getElementById("yazi").className = stil;
+        }
+    </script>
+    <style>
+       .gs
+        {
+            color:#F00;
+            background-color:#FF0;
+            border: 2px solid #F00;
+        }
+       .fb
+        {
+            color:#006;
+            background-color:#FF0;
+            border: 2px solid #006;
+        }
+     .bjk
+        {
+            color:#FFF;
+            background-color:#000;
+            border: 2px solid #000;
+        }
+    </style>
+    
+</head>
+<body>
+           <p>
+               <button id="b1" onclick="stildegistir('gs')">GS</button>
+               <button id="b2" onclick="stildegistir('fb')">FB</button>
+               <button id="b3" onclick="stildegistir('bjk')">BJK</button>
+           </p>       
+    <p id="yazi">Bu paragrafın stil özelliği değişecek.</p>
+</body>
+</html>

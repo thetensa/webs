@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        function degistir() {
+            var baslik = document.getElementById("baslik").value;
+            var paragraf = document.getElementById("paragraf").value;
+            var tekrar = Number(document.getElementById("tekrar").value);
+            document.getElementById("yazibaslik").innerText = baslik;
+            for (var i = 1; i <= tekrar; i++) {
+                document.getElementById("cerceve").innerHTML += '<p>' + paragraf + '</p>';
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+           <td>Başlık</td>
+           <td><input type="text" id ="baslik"/></td>      
+        </tr>
+        <tr>
+            <td>Paragraf</td>
+            <td><textarea id="paragraf"></textarea></td>
+        </tr>
+        <tr>
+            <td>Paragraf Tekrar Sayısı</td>
+            <td><input type="text" id="tekrar" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="Yerleştir" onclick="degistir()"/></td>
+        </tr>
+    </table>
+    <h2 id="yazibaslik">Yazımızın Başlığı</h2>
+    <div id="cerceve"></div>
+</body>
+</html>

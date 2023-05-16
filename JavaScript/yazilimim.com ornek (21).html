@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        #yazidiv
+        {
+            border:3px solid #4800ff;
+            width:500px;
+            margin:0px auto;
+            padding:10px;
+        }
+    </style>
+    <script>
+        function renkdegistir(a)
+        {
+            document.getElementById("yazidiv").style.background = a;
+        }
+    </script>
+</head>
+<body>
+    <div id="yazidiv">
+        <h2>JavaScript Nedir ?</h2>
+        <p>Tarihsel olarak web sayfaları bir kitaptaki sayfalara benzer şekilde statikti. Statik bir sayfa bilgileri çoğunlukla sabit bir düzende görüntülüyordu ve şimdi modern bir web sitesinden beklediğimiz her şeyi yapmıyordu. JavaScript, web uygulamalarını daha dinamik hale getirmek için tarayıcı bazlı bir teknoloji olarak ortaya çıktı. Tarayıcılar JavaScript kullanarak kullanıcı etkileşimine yanıt verebilir ve web sayfasındaki içerik düzenini değiştirebilir.</p>
+        <input type="button" name="btn" value="Mavi" onclick="renkdegistir('blue')" />
+        <input type="button" name="btn2" value="Kırmızı" onclick="renkdegistir('red')" />
+        <input type="button" name="btn3" value="Yeşil" onclick="renkdegistir('green')" />
+    </div>
+    
+</body>
+</html>

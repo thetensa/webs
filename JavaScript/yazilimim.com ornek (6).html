@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        #kutu
+        {
+            width:200px;
+            height:150px;
+            background-color:#ffd800;
+            border:5px solid #567;
+            padding:10px;
+        }
+    </style>
+    <script>
+        function gg()
+        {
+            if (document.getElementById("yazi").style.display == "block")
+                document.getElementById("yazi").style.display = "none";
+            else document.getElementById("yazi").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <div id="kutu">
+        <p id="yazi">Bu yazımız bir paragraf olarak ifade edilmiş olup kutu divimizin içindedir</p>
+    </div>
+    <input type="button" name="btn" value="Göster/Gizle" onclick="gg()"/>
+</body>
+</html>

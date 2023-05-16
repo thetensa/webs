@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        var ingilizce = ["apple", "bottle", "computer", "book", "mouse", "wall","pen","paper","table"]
+        var turkce = ["elma", "şişe", "bilgisayar", "kitap", "fare", "duvar","kalem","kağıt","masa"]
+        function cevir() {
+            var siraNo;
+            siraNo = ingilizce.indexOf(document.getElementById("aranankelime").value);
+            if (siraNo>=0) {
+                document.getElementById("turkce").innerText = turkce[siraNo];
+            }
+
+        }
+    </script>
+</head>
+<body style="background-color: orange;">
+    <input type="text" id="aranankelime" placeholder="İngilizce Kelime"/>
+    <input type="button" id="Çevir" onclick="cevir()" value="Çevir"/>
+    <h3 id="turkce">Kelimenin Türkçe Karşılığı</h3>
+</body>
+</html>

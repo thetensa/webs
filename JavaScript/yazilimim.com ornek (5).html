@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        input[type="button"]{
+            width:200px;
+            height:200px;
+            border:none;
+            font-size:3em;
+            background-color:#FF6766;
+            color:#E7E7E7;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" onclick="artir()"value="+"/>
+    <input type="button" onclick="azalt()" value="-" />
+    <input type="button" id="sonuc" value="0" />
+    <script>
+        function artir() {
+            var sonuc = document.getElementById("sonuc");
+            sonuc.value = Number(sonuc.value) + 1; 
+        }
+        function azalt() {
+            var sonuc = document.getElementById("sonuc");
+            sonuc.value = Number(sonuc.value) - 1;
+        }
+    </script>
+</body>
+</html>

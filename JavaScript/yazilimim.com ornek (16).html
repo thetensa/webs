@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        #cerceve{
+            width:100px;
+            height:100px;
+            background-color:#ff6a00;
+        }
+    </style>
+    <script>
+        function yuvarla(der) {
+            document.getElementById("cerceve").style.borderRadius = der;
+        }
+    </script>
+</head>
+<body>
+    <div id="cerceve"></div>
+    <input type="radio" name="1" onclick="yuvarla('0px')"/>0 Derece<br />
+    <input type="radio" name="1" onclick="yuvarla('5px')"/>5 Derece<br />
+    <input type="radio" name="1" onclick="yuvarla('10px')"/>10 Derece<br />
+    <input type="radio" name="1" onclick="yuvarla('25px')"/>25 Derece<br />
+    <input type="radio" name="1" onclick="yuvarla('50px')" />50 Derece<br />
+</body>
+</html>

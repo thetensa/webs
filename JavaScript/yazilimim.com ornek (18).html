@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        function degisim()
+        {
+            var secilen = document.getElementById("secim").value;
+            if (secilen == "Resim1") { document.getElementById("gorsel").src = "Resimler/Resim1.jpg" }
+            if (secilen == "Resim2") { document.getElementById("gorsel").src = "Resimler/Resim2.jpg" }
+            if (secilen == "Resim3") { document.getElementById("gorsel").src = "Resimler/Resim3.jpg" }
+        }
+    </script>
+    <style>
+        img
+        {
+            width:200px;
+            height:200px;
+            border:2px solid #fff;
+        }
+        #cerceve
+        {
+            width:205px;
+            height:205px;
+            border:1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="cerceve">
+        <img src="Resimler/Resim1.jpg" id="gorsel"/>
+        <select id="secim">
+            <option>Seçiniz...</option>
+            <option>Resim1</option>
+            <option>Resim2</option>
+            <option>Resim3</option>
+        </select>
+        <input type="button" value="Uygula" onclick="degisim()"/>
+    </div>
+</body>
+</html>
